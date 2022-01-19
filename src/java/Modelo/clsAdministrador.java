@@ -72,7 +72,7 @@ public class clsAdministrador {
     public java.sql.Connection conexion(){
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            cnn = (Connection) DriverManager.getConnection("jdbc:mysql://localhost/item_academico","root","jorgeggm098");
+            cnn = (Connection) DriverManager.getConnection("jdbc:mysql://localhost/item_academico","","");
             System.out.println("Conexion a BD exitosa");
         }catch(ClassNotFoundException | SQLException ex){
             System.out.println("Error: " + ex.getMessage());
